@@ -16,7 +16,7 @@
 # Features:
 ## <a name="feature-chat">1. Chat</a>
 Chat for the customer that is stylish, easy to understand and can be displayed in a webapp or a native app
-## <a name="feature-real-time-chat-updates">2. Real Time Chat Updates:</a>
+## <a name="feature-realtime-chat-updates">2. Real Time Chat Updates:</a>
 Whatever the user types in the chat should be **immediately** visible to all of the Nomads and/or the default Nomad. This will ensure that the task can be replied as quick as possible.
 ## <a name="feature-customer-claim"> 3. Customer Claim </a>
 When the default Nomad is not available or the user doesn't have an appointed Nomad yet, it should be possible for the Nomads to claim a customer for themselves.
