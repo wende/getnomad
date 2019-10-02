@@ -4958,7 +4958,7 @@ h6 {
 
 .font-face--plantin-light,
 p {
-    font-family: "Plantin Light", serif;
+    font-family: "Plantin Light", sans-serif;
     font-weight: 400;
     font-style: normal
 }
@@ -7440,6 +7440,10 @@ body.loaded .section-hero .logo {
     top: 0
 }
 
+img.gem_img {
+    top: 0
+}
+
 .section-hero {
     position: relative;
     overflow: hidden;
@@ -7883,9 +7887,9 @@ body.loaded .section-gems .gem-image {
         display: inline-block
     }
     .section-gems .gem-copytext {
-        -webkit-column-count: 2;
+        /* -webkit-column-count: 2;
         -moz-column-count: 2;
-        column-count: 2;
+        column-count: 2; */
         -webkit-column-gap: 20px;
         -moz-column-gap: 20px;
         column-gap: 20px
