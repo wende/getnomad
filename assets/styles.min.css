@@ -5786,6 +5786,13 @@ hr {
     transition-delay: 1s
 }
 
+.section-gems .gem.gem-todo {
+    opacity: 0;
+    display: flex !important;
+    height: 0px;
+    padding: 0px 20px;
+}
+
 .logo--animated .letter-s .fill-1,
 .logo--animated .letter-s .fill-2 {
     -webkit-transition-delay: 1.2s;
