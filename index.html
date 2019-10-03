@@ -54,10 +54,21 @@
 	<script async="" src="./assets/analytics.js"></script>
 	<script type="text/javascript" src="./assets/respond.min.js"></script>
 	<script type="text/javascript" src="./assets/modernizr.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 </head>
 
 <body class="loading loaded initialized">
 
+		<script src="http://localhost/assets/chat/chat.min.js"></script>
+		<script>
+		$(function() {
+		  new ZammadChat({
+			background: '#e6e5e5',
+			fontSize: '12px',
+			chatId: 1
+		  });
+		});
+		</script>
 
 	<section class="section-intro">
 		<div class="logo logo--animated is-animated">
@@ -374,8 +385,6 @@
 			</div>
 
 			<div class="section__content">
-
-
 				<div class="row gutter--s--1">
 					<div class="column--s--12">
 						<h3
@@ -436,7 +445,7 @@
 							</li> -->
 
 
-
+							<!-- ABOUT NOMAD SECTION -->
 							<li class="gem gutter--s--1 gutter--l--2 animate">
 								<svg class="gem__icon-fether" xmlns="http://www.w3.org/2000/svg" width="80" height="54"
 									viewBox="0 0 79.4 53.9">
@@ -476,12 +485,7 @@
 				</div>
 
 				<div class="row gutter--s--1 gutter-vertical--m--2 max-width--1200 horizontal-align--s--center">
-					<!-- <div class="column--m--12of12 column--l--6of12 gutter--s--2">
-						<h3 class=" text-align--l--right">
-							Earn money from your Internet expertise<br>
-							Or get your own expert today
-						</h3>
-					</div> -->
+					<!-- <div class="column--m--12of12 column--l--6of12 gutter--s--2"> <h3 class=" text-align--l--right"> Earn money from your Internet expertise<br> Or get your own expert today </h3> </div> -->
 					<div class="gem-copytext column--m--6of12 gutter--s--1 text-color--grey-light text-align--l--right"">
 						<p>
 							With more than a decade of experience I tackle a broad variety of disciplines in the process
