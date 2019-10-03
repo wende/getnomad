@@ -16,7 +16,7 @@
 # Features:
 ## <a name="feature-chat">1. Chat :white_check_mark:</a>
 Chat for the customer that is stylish, easy to understand and can be displayed in a webapp or a native app
-## <a name="feature-realtime-chat-updates">2. Real Time Chat Updates:</a>
+## <a name="feature-realtime-chat-updates">2. Real Time Chat Updates :soon:</a>
 Whatever the user types in the chat should be **immediately** visible to all of the Nomads and/or the default Nomad. This will ensure that the task can be replied as quick as possible.
 ## <a name="feature-customer-claim"> 3. Customer Claim </a>
 When the default Nomad is not available or the user doesn't have an appointed Nomad yet, it should be possible for the Nomads to claim a customer for themselves.
@@ -24,7 +24,7 @@ When the default Nomad is not available or the user doesn't have an appointed No
 When a Nomad has the website open they can mark a toggle button that they are willing to take orders in this moment. This button should emit a heart-beat to the server ensuring that it doesn't stay on accidentally
 ## <a name="feature-time-billing"> 5. Time Billing </a>
 Time billing activates when a first dialogue is established between the customer and the Nomad. Although it is not yet a "closed deal", in case if it is, this is the starting point when the customer is charged for, and the starting point where the Nomad is accounted for.
-## <a name="feature-delayed-ticket-acquisition"> 6. Delayed Ticket Acquisition </a>
+## <a name="feature-delayed-ticket-acquisition"> 6. Delayed Ticket Acquisition :soon:/ </a>
 The deal gets "closed" **only** and **only** after the customer wrote back to the Nomad that he's still willing to get his problem solved. If this doesn't happen, the customer is not charged and the Nomad doesn't get any compensation.
 ## <a name="feature-completion-notification"> 7. Completion Notification </a>
 A user should always have the best way possible to know when his problem was solved. They can choose SMS or Email notification on top of regular push notifications to be informed about any required actions.
@@ -33,5 +33,5 @@ A user should always have the best way possible to know when his problem was sol
 # Threats
 ## <a name="threat-measuring-time-of-the-task"> 1. Measuring Time of the Task </a>
 Nomads will most likely multi-task, they should however keep track of the time spent for a specific task for a specific user. A time tracking software would be perfect. Somthing similar to WakaTime tracking each site visited would yield the best results in terms of accurate time tracking and analytics on what works best.
-## <a name="handling-urgent-orders"> 2. Handling Urgent Orders </a>
+## <a name="handling-urgent-orders"> 2. Handling Urgent Orders :x: </a>
 There is a certain category of tasks that require solving as soon as possible. A user should be allowed to select (sooner the better) an urgency for his task. A safety measure ought to be provided to prevent abuse of increased urgency feature.
