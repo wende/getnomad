@@ -510,10 +510,11 @@ body {
 
   float: right;
   width: 66.66%;
-  padding-right: 100px;
+  padding-right: 75px;
   height: 100%;
   overflow: hidden;
   position: relative;
+  overflow: visible;
 }
 @media screen and (max-width: 735px) {
   #frame .content {
@@ -556,10 +557,11 @@ body {
 }
 #frame .content .messages {
   height: auto;
-  min-height: calc(100% - 120px);
-  max-height: calc(100% - 120px);
+  min-height: calc(100% - 110px);
+  max-height: calc(100% - 110px);
   overflow-y: scroll;
   overflow-x: hidden;
+  padding-right: 25px;
 }
 @media screen and (max-width: 735px) {
   #frame .content .messages {
@@ -574,7 +576,7 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 #frame .content .messages ul li {
-  display: inline-block;
+  display: block;
   clear: both;
   float: left;
   margin: 15px 15px 5px 15px;
@@ -585,19 +587,23 @@ body {
   margin-bottom: 20px;
 }
 #frame .content .messages ul li.sent img {
-  margin: 6px 8px 0 0;
+  margin: 20px 0px 0 25px;
 }
 #frame .content .messages ul li.sent p {
+  display: table;
+  margin-left: -65px;
+  padding-left: 82px;
   background: rgb(250, 250, 250);
   color: rgb(89, 92, 93);
   /* background: rgb(89, 92, 93);; */
   /* color: white; */
   /* todo */
-  box-shadow: 3px 3px 5px 5px rgb(242,242,245)	;
+  box-shadow: 3px 3px 8px 8px rgb(242,242,245)	;
   border-bottom-left-radius: 0px;
 
 }
 #frame .content .messages ul li.replies img {
+  display: none;
   float: right;
   margin: 6px 0 0 8px;
 }
@@ -606,18 +612,18 @@ body {
   color: rgb(89, 92, 93);
   float: right;
   /* todo */
-  box-shadow: 3px 3px 5px 5px rgb(242,242,245)	;
+  box-shadow: 3px 3px 8px 8px rgb(242,242,245)	;
   border-bottom-right-radius: 0px;
 }
 
 #frame .content .messages ul li img {
-  width: 22px;
+  width: 37px;
   border-radius: 50%;
   float: left;
 }
 #frame .content .messages ul li p {
   display: inline-block;
-  padding: 25px 25px;
+  padding: 30px 40px;
   border-radius: 25px;
   /* max-width: 205px; */
   line-height: 130%;
@@ -628,9 +634,10 @@ body {
   }
 }
 #frame .content .message-input {
+  right: 110px;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 92.5%;
   z-index: 99;
 }
 #frame .content .message-input .wrap {
@@ -643,13 +650,13 @@ body {
   /* max-width: 205px; */
   line-height: 130%;
   border: none;
-  width: calc(100% - 90px);
+  width: calc(100% - 40px);
   font-size: 0.8em;
   background: white;
   color: rgb(89, 92, 93);
   float: right;
   /* todo */
-  box-shadow: 3px 3px 5px 5px rgb(242,242,245)	;
+  box-shadow: 3px 3px 8px 8px rgb(242,242,245)	;
   border-bottom-right-radius: 0px;
   resize: none;
   font-size: 15px;
@@ -676,12 +683,12 @@ body {
 @media screen and (max-width: 735px) {
   #frame .content .message-input .wrap .attachment {
     margin-top: 17px;
-    right: 65px;
+    right: 60px;
   }
 }
 #frame .content .message-input .wrap  button {
   position: absolute;
-  right: 10;
+  right: 15;
   z-index: 4;
   margin-top: 28px;
   font-size: 1.1em;
@@ -732,10 +739,36 @@ body {
   padding-top: 30%;
   /* padding: ; */
 }
-#frame .name-badge h3 {
-  font-size: 1.5em;
+#frame .name-badge h2 {
+  color: rgb(65,69,72);
+  font-size: 1.8em;
   line-height: 1.5em;
   font-weight: 500;
+}
+#frame .name-badge h3 {
+  padding-bottom: 2.5em;
+}
+
+#frame .name-badge h4 {
+  padding-top: 1em;
+  font-weight: 500;
+  font-size: 1.15em;
+  line-height: 1.3em;
+  color: rgb(153,161,164);
+
+}
+#frame .name-badge h5 {
+  color: rgb(10, 10, 10);
+  font-size: 0.75em;
+  font-weight: 600;
+
+}
+#frame .name-badge hr {
+  border-top: 1px solid black;
+  width: 40px;
+  margin-left: 0;
+  margin-top: 2.5em;
+
 }
 
 #frame .hampburger {

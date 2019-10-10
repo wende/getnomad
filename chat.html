@@ -47,8 +47,23 @@ Website: http://emilcarlsson.se/
         <div class="name-badge">
 
 
-            <h3> Pixel Perfect</h3>
-            <h2> Something Something</h2>
+            <h2> Jane Doe </h2>
+            <h3> Nomad </h3>
+
+			<h4> jane.doe@gmail.com </h4>
+			<h5> E-mail </h5>
+
+			<h4> Via Giane Doesiani </h4>
+			<h5> Adress </h5>
+
+			<h4> Jaananananannananan </h4>
+			<h5> City </h5>
+
+			<hr/>
+
+			<h4> None </h4>
+			<h5> Expertise </h5>
+
         </div>
 
 
@@ -275,14 +290,14 @@ $("#status-options ul li").click(function() {
 });
 
 function newMessage() {
-	message = $(".message-input textarea").val();
+	message = $(".message-input textarea").val().replace(new RegExp("\n", 'g'), "<br>");
 	if($.trim(message) == '') {
 		return false;
 	}
-	$('<li class="sent"><img src="http://emilcarlsson.se/assets/mikeross.png" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
+	$('<li class="replies"><img src="http://emilcarlsson.se/assets/mikeross.png" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
 	$('.message-input textarea').val(null);
 	$('.contact.active .preview').html('<span>You: </span>' + message);
-	$(".messages").animate({ scrollTop: $(document).height() }, "fast");
+	$(".messages").animate({ scrollTop: $(".messages")[0].scrollHeight }, "slow");
 };
 
 $('.submit').click(function() {
